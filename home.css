@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: url(assets/images/background.jpg);
+}
+
+body .content {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+body .content .information {
+    width: 50vw;
+}
+
+body .content .information .header-titulo {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+body .content .information .header-titulo h1 {
+    font-size: 70pt;
+    font-weight: 800;
+    color: rgb(119, 24, 137);
+    padding-top: 40px;
+}
+
+body .content .information .header-titulo h2 {
+    color: rgb(180, 81, 213);
+    padding-bottom: 30px;
+}
+
+body .content .information .section-link h3 {
+    font-size: 10pt;
+    color: rgb(119, 24, 137);
+}
+
+body .content .information .header-titulo .header-sociais a,
+body .content .information .header-titulo .header-sociais {
+    font-size: 20pt;
+    color: rgb(254, 92, 131);
+    width: 32vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+body .content .information .header-titulo .header-sociais i:hover {
+    color: rgb(75, 197, 245);
+    transition: 0.3s ease-in;
+}
+
+body .content .information .section-link {
+    height: 55vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+body .content .information .section-link .section-whatsapp,
+body .content .information .section-link .section-cardapio {
+    color: white;
+    border-radius: 30px;
+    font-size: 15pt;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(75, 197, 245);
+}
+
+body .content .information .section-link .section-whatsapp:hover,
+body .content .information .section-link .section-cardapio:hover {
+    color: white;
+    border-radius: 30px;
+    font-size: 15pt;
+    padding: 15px 40px;
+    display: flex;
+    background-color: rgb(254, 92, 131);
+    transition: 0.3s ease-in;
+}
+
+body .content .information .section-link .section-whatsapp span,
+body .content .information .section-link .section-cardapio span {
+    padding-right: 15px;
+}
+
+body .content .logo {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright h5 {
+    color: rgb(119, 24, 137);
+    font-size: 7.5pt;
+    text-align: center;
+}

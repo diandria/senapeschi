@@ -1,0 +1,109 @@
+:root {
+    --roxo-escuro: rgb(119, 24, 137);
+    --roxo-claro: rgb(180, 81, 213);
+    --azul-escuro: rgb(75, 197, 245);
+    --rosa-escuro: rgb(254, 92, 131);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: url(assets/images/background.jpg);
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+li {
+    display: flex;
+}
+
+.menu {
+    background-color: var(--roxo-escuro);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 14vh;
+    z-index: 1;
+}
+
+.content {
+    padding-top: 14vh;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content .menu-title img {
+    width: 91vw;
+    height: 20vw;
+    border-radius: 15px
+}
+
+.content .menu-cardapio {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+.content .menu-cardapio a div {
+    background: var(--rosa-escuro);
+    height: 100px;
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease-in;
+}
+
+.content .menu-cardapio a div:hover {
+    background: var(--azul-escuro);
+    transition: 0.4s ease-in;
+}
+
+.content .menu-cardapio a div h1 {
+    font-size: 20pt;
+}
+
+.content p {
+    font-weight: bold;
+}
+
+.cardapio {
+    width: 100vw;
+    height: 100vh;
+}
+
+.content-item {
+    display: flex;
+    width: calc(100%/3);
+    height: 250px;
+    flex-flow: column-nowrap;
+}
+
+.content-item img {
+    width: 250px;
+}
+
+.
+/*.copyright h5 {
+    color: rgb(119, 24, 137);
+    font-size: 7.5pt;
+    text-align: center;
+}*/
