@@ -37,6 +37,18 @@ li {
     width: 100vw;
     height: 14vh;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.menu a img {
+    height: 95px
+}
+
+.menu div {
+    display: flex;
 }
 
 .content {
@@ -86,6 +98,38 @@ li {
 }
 
 .cardapio {
+    padding: 2em;
+    min-height: 100vh;
+}
+
+.cardapio .grid {
+    display: grid;
+    gap: 3em 11em;
+}
+
+.cardapio figure {
+    display: flex;
+    width: calc(90vw/3);
+}
+
+.grid-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 70px;
+}
+
+@media (min-width: 880px) {
+    .cardapio .grid {
+        grid-template-columns: repeat(3, 260px);
+        align-content: center;
+    }
+}
+
+
+/*
+.cardapio {
     width: 100vw;
     height: 100vh;
 }
@@ -101,8 +145,8 @@ li {
     width: 250px;
 }
 
-.
-/*.copyright h5 {
+
+.copyright h5 {
     color: rgb(119, 24, 137);
     font-size: 7.5pt;
     text-align: center;
