@@ -16,8 +16,6 @@ html {
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
     background: url(assets/images/background.jpg);
 }
 
@@ -31,29 +29,44 @@ li {
 }
 
 .menu {
-    background-color: var(--roxo-escuro);
+    background-color: rgb(119, 24, 137);
     position: fixed;
     top: 0;
-    width: 100vw;
-    height: 14vh;
+    width: 100%;
+    height: 14%;
     z-index: 1;
     display: flex;
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
+    border-radius: 0 0 20px 20px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
 }
 
 .menu a img {
-    height: 95px
+    height: 95px;
 }
 
-.menu div {
-    display: flex;
+.menu a h1 {
+    font-size: 23pt
+}
+
+.fab,
+.menu a h4 {
+    font-size: 15pt;
+}
+
+.fab {
+    margin-right: 20px;
 }
 
 .content {
     padding-top: 14vh;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -69,7 +82,7 @@ li {
 
 .content .menu-cardapio {
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: space-evenly;
 }
 
@@ -98,8 +111,17 @@ li {
 }
 
 .cardapio {
-    padding: 2em;
-    min-height: 100vh;
+    padding: 2.5em;
+    min-height: 100%;
+}
+
+.cardapio h2 {
+    font-size: 25pt;
+    margin-top: 1.2em;
+}
+
+.cardapio hr {
+    margin-bottom: 3em;
 }
 
 .cardapio .grid {
@@ -112,12 +134,17 @@ li {
     width: calc(90vw/3);
 }
 
+.cardapio figcaption {
+    padding-left: 10px;
+}
+
 .grid-img {
     width: 200px;
     height: 200px;
     object-fit: cover;
     object-position: center;
     border-radius: 70px;
+    transition: 0.5s ease-out;
 }
 
 @media (min-width: 880px) {
@@ -127,27 +154,13 @@ li {
     }
 }
 
-
-/*
-.cardapio {
-    width: 100vw;
-    height: 100vh;
+.grid-img:hover {
+    transform: scale(1.3);
+    border-radius: 20px;
 }
-
-.content-item {
-    display: flex;
-    width: calc(100%/3);
-    height: 250px;
-    flex-flow: column-nowrap;
-}
-
-.content-item img {
-    width: 250px;
-}
-
 
 .copyright h5 {
     color: rgb(119, 24, 137);
     font-size: 7.5pt;
     text-align: center;
-}*/
+}
