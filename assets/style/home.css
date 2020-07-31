@@ -106,3 +106,10 @@ a {
     font-size: 7.5pt;
     text-align: center;
 }
+
+
+/* @media (max-width: 750px) {
+    .logo {
+        display: none
+    }
+} */
