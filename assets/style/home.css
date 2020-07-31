@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: url(../images/background.jpg);
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+.content {
+    display: flex;
+}
+
+.logo {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-titulo {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-titulo h1 {
+    font-size: 70pt;
+    font-weight: 800;
+    color: rgb(119, 24, 137);
+    padding-top: 40px;
+}
+
+.header-titulo h2 {
+    color: rgb(180, 81, 213);
+    padding-bottom: 30px;
+}
+
+.information {
+    width: 50vw;
+}
+
+.header-sociais,
+.header-sociais a {
+    font-size: 20pt;
+    color: rgb(254, 92, 131);
+    width: 32vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-sociais i:hover {
+    color: rgb(75, 197, 245);
+    transition: 0.3s ease-in;
+}
+
+.section-link {
+    height: 55vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-link h3 {
+    font-size: 10pt;
+    color: rgb(119, 24, 137);
+}
+
+.section-whatsapp,
+.section-cardapio {
+    color: white;
+    border-radius: 30px;
+    font-size: 15pt;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(75, 197, 245);
+}
+
+.section-whatsapp:hover,
+.section-cardapio:hover {
+    color: white;
+    border-radius: 30px;
+    font-size: 15pt;
+    padding: 15px 40px;
+    display: flex;
+    background-color: rgb(254, 92, 131);
+    transition: 0.3s ease-in;
+}
+
+.section-whatsapp span,
+.section-cardapio span {
+    padding-right: 15px;
+}
+
+.copyright h5 {
+    color: rgb(119, 24, 137);
+    font-size: 7.5pt;
+    text-align: center;
+}
