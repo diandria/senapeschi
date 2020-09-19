@@ -1,3 +1,12 @@
+:root {
+    --dark-purple: #74118C;
+    --light-purple: #C445DE;
+    --light-blue: #2CD3FF;
+    --dark-blue: #00A8D4;
+    --dark-pink: #FE5284;
+    --light-pink: #ff6d96;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +14,7 @@
 
 body {
     font-family: 'Nunito', sans-serif;
-    background: url(../images/background.jpg);
+    background: radial-gradient(100% 100% at 0% 0%, #f4c4ff 0%, #bdf2ff 100%);
 }
 
 a {
@@ -13,103 +22,137 @@ a {
     color: white
 }
 
-.content {
-    display: flex;
-}
 
-.logo {
-    width: 50vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/*Header do site*/
 
-.header-titulo {
-    height: 40vh;
+header {
+    margin-top: 35px;
+    margin-bottom: 30px;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
 
-.header-titulo h1 {
-    font-size: 70pt;
+header h1 {
+    font-style: normal;
     font-weight: 800;
-    color: rgb(119, 24, 137);
-    padding-top: 40px;
+    font-size: 53px;
+    line-height: 78px;
+    color: var(--dark-purple);
 }
 
-.header-titulo h2 {
-    color: rgb(180, 81, 213);
-    padding-bottom: 30px;
+header h4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 29px;
+    color: var(--light-purple)
 }
 
-.information {
-    width: 50vw;
-}
-
-.header-sociais,
-.header-sociais a {
-    font-size: 20pt;
-    color: rgb(254, 92, 131);
-    width: 32vw;
+header .header-icons a,
+header .header-icons {
+    margin-top: 10px;
     display: flex;
+    width: 100%;
     justify-content: space-around;
+    font-size: 25px;
 }
 
-.header-sociais i:hover {
-    color: rgb(75, 197, 245);
-    transition: 0.3s ease-in;
+header .header-icons a {
+    color: var(--dark-pink)
 }
 
-.section-link {
-    height: 55vh;
+
+/*Botões de navegação do site*/
+
+.section-button {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
 
-.section-link h3 {
-    font-size: 10pt;
-    color: rgb(119, 24, 137);
-}
-
-.section-whatsapp,
-.section-cardapio {
-    color: white;
-    border-radius: 30px;
-    font-size: 15pt;
-    padding: 15px 40px;
+.section-whatsapp a,
+.section-cardapio a {
+    width: 300px;
+    height: 60px;
+    border-radius: 45px;
     display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(75, 197, 245);
+    align-items: center;
+    margin-top: 20px;
+    background: radial-gradient(100.08% 2321.33% at -0.09% 49.55%, var(--light-blue) 40.63%, var(--dark-blue) 100%);
+    ;
+    transition: 400ms;
 }
 
-.section-whatsapp:hover,
-.section-cardapio:hover {
-    color: white;
-    border-radius: 30px;
-    font-size: 15pt;
-    padding: 15px 40px;
+.section-whatsapp a:hover,
+.section-cardapio a:hover {
+    background: radial-gradient(100.08% 2321.33% at -0.09% 49.55%, var(--light-pink) 40.63%, var(--dark-pink) 100%);
+}
+
+.section-whatsapp a span,
+.section-cardapio a span {
+    width: 60px;
+    height: 60px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    background-color: rgba(255, 255, 255, 0.4);
     display: flex;
-    background-color: rgb(254, 92, 131);
-    transition: 0.3s ease-in;
+    align-items: center;
+    justify-content: center;
 }
 
-.section-whatsapp span,
-.section-cardapio span {
-    padding-right: 15px;
+.section-whatsapp a span i,
+.section-cardapio a span i {
+    font-size: 23px;
 }
 
-.copyright h5 {
-    color: rgb(119, 24, 137);
-    font-size: 7.5pt;
+.section-whatsapp a strong,
+.section-cardapio a strong {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 31px;
+    color: white;
+    flex: 1;
     text-align: center;
 }
 
 
-/* @media (max-width: 750px) {
-    .logo {
-        display: none
-    }
-} */
+/*Logotipo*/
+
+.section-logo {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-logo img {
+    width: 230px;
+}
+
+
+/*horario*/
+
+h3 {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 29px;
+    color: var(--dark-purple);
+    text-align: center;
+}
+
+
+/*rodape*/
+
+.copyright h5 {
+    margin-top: 17px;
+    color: var(--dark-purple);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+}
